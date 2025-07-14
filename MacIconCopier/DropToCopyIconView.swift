@@ -40,14 +40,23 @@ struct DropToCopyIconView: View {
     // MARK: - Drop Zone
     private var dropZone: some View {
         ZStack {
-            GlassEffectContainer {
+            if #available(macOS 26.0, *) {
+                GlassEffectContainer {
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(style: StrokeStyle(lineWidth: 6, dash: [11]))
+                        .foregroundColor(isTargeted ? .accentColor : .secondary)
+                        .aspectRatio(1, contentMode: .fit)
+                        .background(isTargeted ? Color.accentColor.opacity(0.2) : Color.secondary.opacity(0.12))
+                    
+                }.clipShape(RoundedRectangle(cornerRadius: 12))
+            } else {
                 RoundedRectangle(cornerRadius: 12)
                     .stroke(style: StrokeStyle(lineWidth: 6, dash: [11]))
                     .foregroundColor(isTargeted ? .accentColor : .secondary)
                     .aspectRatio(1, contentMode: .fit)
                     .background(isTargeted ? Color.accentColor.opacity(0.2) : Color.secondary.opacity(0.12))
-
-            }.clipShape(RoundedRectangle(cornerRadius: 12))
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+            }
 
             if let firstIcon = iconManager.droppedIcons.first {
                 backgroundIconStack
