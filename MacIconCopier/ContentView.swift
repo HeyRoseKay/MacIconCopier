@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    let size: CGFloat = 420
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            DropToCopyIconView()
         }
-        .padding()
+        .frame(width: size, height: size)
+        .navigationTitle("Icon Copier")
     }
 }
 

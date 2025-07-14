@@ -1,0 +1,166 @@
+{
+  "fill-specializations" : [
+    {
+      "value" : "system-light"
+    },
+    {
+      "appearance" : "dark",
+      "value" : "system-dark"
+    }
+  ],
+  "groups" : [
+    {
+      "blur-material" : 0.01,
+      "layers" : [
+        {
+          "image-name" : "Top Lid.png",
+          "name" : "Top Lid",
+          "position" : {
+            "scale" : 1.11,
+            "translation-in-points" : [
+              0,
+              -390
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.69
+      },
+      "specular" : true,
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.31
+      }
+    },
+    {
+      "layers" : [
+        {
+          "glass" : false,
+          "image-name-specializations" : [
+            {
+              "value" : "Podcasts_Icon_1024x1024.png"
+            },
+            {
+              "appearance" : "light",
+              "value" : "Podcasts_Icon_1024x1024 Light.png"
+            }
+          ],
+          "name" : "Podcasts_Icon_1024x1024 Light",
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              0,
+              636
+            ]
+          }
+        },
+        {
+          "glass" : false,
+          "image-name-specializations" : [
+            {
+              "value" : "Photos_Icon_1024x1024.png"
+            },
+            {
+              "appearance" : "light",
+              "value" : "Photos_Icon_1024x1024 Light.png"
+            }
+          ],
+          "name" : "Photos_Icon_1024x1024 Light",
+          "position" : {
+            "scale" : 0.95,
+            "translation-in-points" : [
+              0,
+              52.5
+            ]
+          }
+        },
+        {
+          "glass" : false,
+          "image-name-specializations" : [
+            {
+              "value" : "Photo Booth_Icon_1024x1024.png"
+            },
+            {
+              "appearance" : "light",
+              "value" : "Photo Booth_Icon_1024x1024 Light.png"
+            }
+          ],
+          "name" : "Photo Booth_Icon_1024x1024 Light",
+          "position" : {
+            "scale" : 0.9,
+            "translation-in-points" : [
+              0,
+              -390
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    },
+    {
+      "layers" : [
+        {
+          "glass" : false,
+          "image-name" : "Main Bed.png",
+          "name" : "Main Bed",
+          "position" : {
+            "scale" : 0.99,
+            "translation-in-points" : [
+              0,
+              -99
+            ]
+          }
+        },
+        {
+          "glass" : true,
+          "image-name" : "Front Face.png",
+          "name" : "Front Face",
+          "opacity-specializations" : [
+            {
+              "value" : 1
+            },
+            {
+              "appearance" : "dark",
+              "value" : 0.9
+            },
+            {
+              "appearance" : "tinted",
+              "value" : 1
+            }
+          ],
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              0,
+              414
+            ]
+          }
+        }
+      ],
+      "lighting" : "combined",
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}
