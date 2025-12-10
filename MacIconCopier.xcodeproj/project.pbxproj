@@ -6,7 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3C5B67CE2EE94D00007C1E28 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C5B67CD2EE94D00007C1E28 /* LICENSE.txt */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		3C5B67CD2EE94D00007C1E28 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		3CC4FA9E2E2231EA001722B7 /* MacIconCopier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacIconCopier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -45,6 +50,7 @@
 		3CC4FA952E2231EA001722B7 = {
 			isa = PBXGroup;
 			children = (
+				3C5B67CD2EE94D00007C1E28 /* LICENSE.txt */,
 				3CC4FAA02E2231EA001722B7 /* MacIconCopier */,
 				3CC4FA9F2E2231EA001722B7 /* Products */,
 			);
@@ -122,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C5B67CE2EE94D00007C1E28 /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
