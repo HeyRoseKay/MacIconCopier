@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  􀏃 ContentView.swift
 //  MacIconCopier
 //
 //  Created by Rose Kay on 7/11/25.

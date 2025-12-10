@@ -1,5 +1,5 @@
 //
-//  IconManager.swift
+//  􃏡 IconManager.swift
 //  MacIconCopier
 //
 //  Created by Rose Kay on 7/12/25.
